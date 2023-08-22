@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>iCoder - Heaven for Programmers</title>
+    <style>
+        .myclass1 {
+            width: 820px;
+            height: 850px;
+        }
+
+        .mycontent1 {
+            width: 900px;
+            height: 850px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Technology</a>
+                            <a class="dropdown-item" href="#">Support</a>
+                            <a class="dropdown-item" href="#">Web develpment</a>
+
+                            <!-- this will give a horizontal line in the dropdown bar to divide some text into different categories -->
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item" href="#">Support</a>
+                            <a class="dropdown-item" href="#">Write for us</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- modals -->
+
+
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Password</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="password" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
+                            <div class="col-auto">
+                                <span id="passwordHelpInline" class="form-text">
+                                    Must be 8-20 characters long!
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--sign-up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="mycontent1 modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Don't have an account? Sign-Up!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="myclass1 vh-100" style="background-color: #eee;">
+                        <div class="container h-100">
+                            <div class="row d-flex justify-content-center align-items-center h-100">
+                                <div class="col-lg-12 col-xl-11">
+                                    <div class="card text-black" style="border-radius: 25px;">
+                                        <div class="card-body p-md-5">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                                                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+
+                                                    <form class="mx-1 mx-md-4">
+
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                            <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                                            <div class="form-outline flex-fill mb-0">
+                                                                <input type="text" id="form3Example1c"
+                                                                    class="form-control" />
+                                                                <label class="form-label" for="form3Example1c">Your
+                                                                    Name</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                            <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                                            <div class="form-outline flex-fill mb-0">
+                                                                <input type="email" id="form3Example3c"
+                                                                    class="form-control" />
+                                                                <label class="form-label" for="form3Example3c">Your
+                                                                    Email</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                                            <div class="form-outline flex-fill mb-0">
+                                                                <input type="password" id="form3Example4c"
+                                                                    class="form-control" />
+                                                                <label class="form-label"
+                                                                    for="form3Example4c">Password</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                            <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                                            <div class="form-outline flex-fill mb-0">
+                                                                <input type="password" id="form3Example4cd"
+                                                                    class="form-control" />
+                                                                <label class="form-label" for="form3Example4cd">Repeat
+                                                                    your password</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-check d-flex justify-content-center mb-5">
+                                                            <input class="form-check-input me-2" type="checkbox"
+                                                                value="" id="form2Example3c" />
+                                                            <label class="form-check-label" for="form2Example3">
+                                                                I agree all statements in <a href="#!">Terms of
+                                                                    service</a>
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-lg">Sign-Up</button>
+                                                        </div>
+
+                                                    </form>
+
+                                                </div>
+                                                <div
+                                                    class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                                                        class="img-fluid" alt="Sample image">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1664598906102-4d80a9d6679a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c291cmNlJTIwMTYwMHg4MDB8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Welcome to iCoder</h3>
+                    <p>Tools, Development & Technology.</p>
+                    <button class="btn btn-danger active">
+                        Tools
+                    </button>
+                    <button class="btn btn-primary">
+                        Technology
+                    </button>
+                    <button class="btn btn-success">
+                        Development
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1622381638713-64bc713d8f48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c291cmNlJTIwMTYwMHg4MDB8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Welcome to iCoder</h3>
+                    <p>Tools, Development & Technology.</p>
+                    <button class="btn btn-danger">
+                        Tools
+                    </button>
+                    <button class="btn btn-primary active">
+                        Technology
+                    </button>
+                    <button class="btn btn-success">
+                        Development
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1621244123855-68e11e5299e8?ixlib=rb-4.0.3&dpr=1&auto=format&fit=crop&w=200&q=60&crop=entropy"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Welcome to iCoder</h3>
+                    <p>Tools, Development & Technology.</p>
+                    <button class="btn btn-danger">
+                        Tools
+                    </button>
+                    <button class="btn btn-primary">
+                        Technology
+                    </button>
+                    <button class="btn btn-success active">
+                        Development
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- my-4 means margin in y axis as 4  ml, mx, mr-->
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Featured post</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://images.unsplash.com/photo-1627329904799-607897b1eb60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHNvdXJjZSUyMDE2MDB4ODAwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">Post title</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://images.unsplash.com/photo-1620553967899-7b24032a3b6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHNvdXJjZSUyMDE2MDB4ODAwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning">World</strong>
+                        <h3 class="mb-0">Featured post</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://images.unsplash.com/photo-1554332049-a72a6671ab7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHNvdXJjZSUyMDE2MDB4ODAwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">Design</strong>
+                        <h3 class="mb-0">Post title</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://images.unsplash.com/photo-1583770539147-581738d1310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHNvdXJjZSUyMDE2MDB4ODAwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2022–2023 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
